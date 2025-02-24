@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <script src="test2.js"></script>
+    <title>TP5 client</title>
+</head>
+
+<body>
+    <menu>
+        <li><button type="button" id="SHOW_BUTTON" onclick="show()">show txt</button></li>
+        <li><button type="button" id="BUT_ADD" onclick="add()">add element</button></li>
+        <li><button type="button" id="REMOVE" onclick="remove()">remove element</button></li>
+        <li><button type="button" id="CLEAR" onclick="clear_json()">clear</button></li>
+        <li><button type="button" id="RESTORE" onclick="restore()">restore</button></li>
+        <li><button type="button" id="PIEBUTTON" onclick="show_pie()">show piechart</button></li>
+    </menu>
+
+    <form style="visibility:hidden" id="formadd">
+        <input type="text" id="titleTF" placeholder="title">
+        <input type="text" id="colorTF" placeholder="color">
+        <input type="number" id="valueTF" placeholder="value">
+        <button type="button" id="DOADD" onclick="sendAdd()">Add</button>
+    </form>
+
+    <form style="visibility:hidden" id="formrem">
+        <input type="number" id="indexTF" placeholder="index">
+        <button type="button" id="SENDREM" onclick="sendRem()">Remove</button>
+    </form>
+
+    <div id="MAINSHOW"></div>
+</body>
