@@ -1,0 +1,5 @@
+#div_1 {border-style:solid; border-width: 1px;border-color: pink;padding: 13px;}
+#im {float: left; margin:11px 11px 11px 0px;}
+.qd {background-color: slategrey; margin:10px; position:fixed; z-index:1 ; top:124px; left:124px; width:405px; height:405px; }
+.qd:active{visibility: hidden;}
+.qd:hover{background-color:orangered ;}
